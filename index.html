@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بطاقة أعمال | AD Doors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #1f2421 0%, #3a403d 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .card-container {
+            width: 100%;
+            max-width: 400px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            overflow: hidden;
+            position: relative;
+            border-top: 6px solid #d90429;
+        }
+        .card-header {
+            background: #f8f9fa;
+            padding: 30px 20px 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        .logo-box {
+            width: 240px;
+            max-width: 100%;
+            height: 170px;
+            padding: 12px;
+            margin: 0 auto 15px;
+            border-radius: 12px;
+            background: #ffffff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid #d90429;
+            overflow: hidden;
+        }
+        .logo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        .brand-title {
+            font-size: 24px;
+            font-weight: 900;
+            color: #2b2d42;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .brand-subtitle {
+            font-size: 13px;
+            color: #6c757d;
+            margin-top: 5px;
+            font-weight: 600;
+        }
+        .card-body {
+            padding: 25px 20px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            background: #f1f3f5;
+            margin-bottom: 15px;
+            padding: 12px 15px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #2b2d42;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        .contact-item:hover {
+            background: #ffffff;
+            border-color: #d90429;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(217, 4, 41, 0.1);
+        }
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: #d90429;
+            color: #ffffff;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            margin-left: 15px;
+            flex-shrink: 0;
+        }
+        .contact-info h4 {
+            font-size: 12px;
+            color: #8d99ae;
+            font-weight: 600;
+        }
+        .contact-info p {
+            font-size: 14px;
+            font-weight: 700;
+            color: #2b2d42;
+        }
+        .card-footer {
+            background: #2b2d42;
+            padding: 15px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    
+:root{--red:#9c1c32;--ink:#292d30}html{scroll-behavior:smooth}body{align-items:flex-start;padding:32px 16px 90px;background:#22272a;color:var(--ink)}body:before,body:after{content:"";position:fixed;inset:-30%;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 110px,#ffffff05 111px 113px,transparent 114px 210px);transform:rotate(-15deg);animation:ambient 24s ease-in-out infinite alternate;z-index:-1}body:after{background:radial-gradient(ellipse at 25% 30%,#9c1c3240,transparent 55%);animation-duration:17s}.card-container{max-width:520px;border-color:var(--red);box-shadow:0 24px 70px #0005}.card-header{padding-top:32px;background:linear-gradient(160deg,#fff,#f2f3f4)}.logo-box{border:0;box-shadow:none;background:transparent;width:280px;height:190px}.brand-title{color:var(--ink)}.brand-subtitle{color:#616870}.contact-icon{background:var(--red)}.contact-item:hover{border-color:var(--red)}.card-footer{background:var(--ink)}.card-body{padding:24px}.tagline{font-size:12px;color:var(--red);margin-top:10px;letter-spacing:1px}.primary,.utility,.work-tile{font:inherit;cursor:pointer;text-decoration:none}.primary{display:flex;align-items:center;justify-content:center;gap:10px;padding:15px 20px;border:0;border-radius:14px;background:var(--red);color:#fff;font-weight:700;box-shadow:0 8px 22px #9c1c3226;transition:transform .2s,box-shadow .2s}.primary:hover{transform:translateY(-3px);box-shadow:0 12px 26px #9c1c323f}.primary:active,.utility:active,.contact-item:active{transform:scale(.97)}.section{margin:26px 0}.section h2{font-size:17px;margin-bottom:14px}.services{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.service{text-align:center;background:#f3f4f5;padding:16px 4px;border-radius:12px;font-size:12px;font-weight:700}.service i{display:block;color:var(--red);font-size:24px;margin-bottom:8px}.utilities{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.utility{border:1px solid #ddd;background:#fff;color:var(--ink);padding:12px;border-radius:12px;font-size:13px}.utility:hover{background:#f6f1f2;border-color:var(--red)}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}.work-tile{border:1px solid #e5e5e5;background:#f2f3f4;border-radius:12px;overflow:hidden;color:#646b72;padding:0;aspect-ratio:4/3;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;font-size:13px}.work-tile img{width:100%;height:100%;object-fit:cover}.work-tile i{font-size:28px;color:var(--red)}.details{background:#f5f6f7;padding:16px;border-radius:12px;font-size:13px;line-height:2}.details a{color:var(--red)}.muted{font-size:12px;color:#737980;line-height:1.9}.reveal{animation:enter .65s both}.contact-item{animation:enter .6s both}.contact-item:nth-of-type(2){animation-delay:.12s}.contact-item:nth-of-type(3){animation-delay:.2s}.contact-item:nth-of-type(4){animation-delay:.28s}.contact-item:nth-of-type(5){animation-delay:.36s}.logo-box{animation:enter .6s both}.brand-title{animation:enter .6s .12s both}.brand-subtitle{animation:enter .6s .22s both}a:focus-visible,button:focus-visible{outline:3px solid #9c1c32;outline-offset:4px}dialog{border:0;border-radius:18px;padding:20px;width:min(92vw,760px);margin:auto}dialog::backdrop{background:#000b}dialog img{width:100%;max-height:75vh;object-fit:contain}dialog button{margin-bottom:10px}.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:12px 20px;border-radius:12px;z-index:10;max-width:90vw;font-size:13px}.quote-fields{display:grid;gap:10px}.quote-fields label{display:grid;gap:4px;font-size:13px}.quote-fields input,.quote-fields select,.quote-fields textarea{font:inherit;padding:10px;border:1px solid #ddd;border-radius:9px;width:100%;box-sizing:border-box}.quote-fields textarea{min-height:80px}.quote-fields .primary{margin-top:8px}@keyframes enter{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}@keyframes ambient{to{transform:translate(3%,2%) rotate(-12deg)}}@media(max-width:380px){.card-body{padding:18px}.services{grid-template-columns:repeat(2,1fr)}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+
+#qr-dialog{width:min(92vw,360px);max-height:90vh;max-height:90dvh;overflow-y:auto;padding:20px;text-align:center}
+#qr-dialog h2{font-size:19px;margin:10px 0}
+#qr-dialog .muted{font-size:12px;line-height:1.7}
+#qr-dialog #qr-image{min-height:0!important;padding:16px!important;margin-top:8px!important}
+#qr-image img,#qr-image canvas{width:200px!important;height:200px!important;max-width:100%;object-fit:contain;image-rendering:pixelated;flex-shrink:0}
+#qr-target{font-size:11px;margin-bottom:12px}
+/* Refined header, portfolio and persistent contact actions. */
+body{padding-bottom:120px}.card-container{border-top:0;border-radius:24px}.card-header{position:relative;padding:24px;background:linear-gradient(145deg,#fff 30%,#f4e9ec)}.card-header:before{content:"";position:absolute;inset:0 0 auto;height:5px;background:var(--red)}.logo-box{width:230px;height:140px;margin-bottom:4px;padding:0}.brand-title{font-size:27px;letter-spacing:2px}.tagline{letter-spacing:0;font-weight:700}.brand-subtitle{line-height:1.9;margin-top:10px}.header-note{display:inline-block;margin-top:16px;padding:7px 12px;border:1px solid #e6d2d7;border-radius:30px;color:var(--red);background:#ffffffb8;font-size:11px;font-weight:700}
+.gallery-empty{grid-column:1/-1;border:1px solid #e6dadd;border-radius:16px;padding:24px 20px;background:linear-gradient(145deg,#faf7f8,#f2f3f4);text-align:center}.gallery-empty>i{display:block;color:var(--red);font-size:28px;margin-bottom:12px}.gallery-empty h3{font-size:15px;margin-bottom:8px}.gallery-empty p{font-size:12px;line-height:1.9;color:#616870}.gallery-links{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:16px}.gallery-links a{border:1px solid #ddcbd0;background:#fff;color:var(--red);border-radius:10px;padding:8px 14px;font-size:12px;text-decoration:none;font-weight:700}.work-tile{position:relative}.work-caption{position:absolute;bottom:0;inset-inline:0;padding:24px 12px 12px;background:linear-gradient(transparent,#000c);color:#fff;text-align:start;font-size:12px;pointer-events:none}
+.mobile-contact{position:fixed;bottom:0;inset-inline:0;z-index:5;display:flex;justify-content:center;gap:10px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:#fffffff5;border-top:1px solid #e9e0e3;box-shadow:0 -6px 24px #0001;backdrop-filter:blur(12px)}.mobile-contact a,.mobile-contact button{min-height:48px;font:inherit;font-size:13px;font-weight:700;display:flex;justify-content:center;align-items:center;gap:9px;border-radius:12px;text-decoration:none;cursor:pointer}.call-action{width:120px;color:var(--ink);background:#fff;border:1px solid #d9dadd}.quote-action{width:min(290px,60vw);color:#fff;background:var(--red);border:0}.toast{bottom:105px}
+@media(min-width:768px){.mobile-contact{inset-inline:auto;left:50%;transform:translateX(-50%);bottom:16px;width:480px;border:1px solid #e9e0e3;border-radius:18px;padding:12px}.quote-action{flex:1}}@media(max-width:380px){.card-header{padding-inline:16px}.logo-box{height:120px;width:210px}.brand-title{font-size:24px}}
+.photo-tools{margin-bottom:16px}.photo-tools .utility{width:100%;margin-bottom:8px}.photo-entry{position:relative;min-width:0}.photo-entry .work-tile{width:100%}.remove-photo{position:absolute;top:8px;left:8px;z-index:1;border:1px solid #eadfe2;border-radius:9px;background:#fff;color:#9c1c32;padding:6px 10px;font:inherit;font-size:11px;cursor:pointer}.photo-title{display:block;width:100%;margin-top:6px;padding:8px;border:1px solid #ddd;border-radius:8px;font:inherit;font-size:12px}
+</style>
+</head>
+<body>
+
+    <div class="card-container">
+        <!-- رأس البطاقة ومكان اللوغو التلقائي -->
+        <div class="card-header">
+            <div class="logo-box">
+                <img src="logo.png" alt="AD Doors Logo" onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=\'color:#d90429;font-weight:bold;font-size:14px;\'>AD DOORS</span>';">
+            </div>
+            <h1 class="brand-title">AD Doors</h1>
+<p class="tagline">تصميم · تصنيع · تركيب</p>
+            <p class="brand-subtitle">أبواب ونوافذ تناسب مساحتك<br>من التصميم إلى التصنيع والتركيب</p>
+            <p class="header-note">ألمنيوم · PVC · حديد · خشب</p>
+        </div>
+
+        <!-- أزرار التواصل والروابط -->
+        <div class="card-body">
+            <button class="primary reveal" id="quote-open" style="width:100%"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> اطلب عرض سعر</button>
+<div class="utilities"><button class="utility" id="save-contact">حفظ رقم الورشة</button><button class="utility" id="share-card">مشاركة البطاقة</button><button class="utility" id="qr-open" style="grid-column:1/-1"><i class="fa-solid fa-qrcode" aria-hidden="true"></i> مشاركة برمز QR</button></div>
+<section class="section reveal"><h2>خدمات الورشة</h2><div class="services"><div class="service"><i class="fa-solid fa-door-open" aria-hidden="true"></i>ألمنيوم</div><div class="service"><i class="fa-solid fa-border-all" aria-hidden="true"></i>PVC</div><div class="service"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>حديد</div><div class="service"><i class="fa-solid fa-door-closed" aria-hidden="true"></i>خشب</div></div></section>
+<section class="section"><h2>تواصل معنا</h2>
+            <a href="tel:0553681362" class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-info">
+                    <h4>اتصال هاتفي</h4>
+                    <p>0553681362</p>
+                </div>
+            </a>
+
+            <a href="https://wa.me/213553681362" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon" style="background: #25d366;"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="contact-info">
+                    <h4>تواصل عبر واتساب</h4>
+                    <p>0553681362</p>
+                </div>
+            </a>
+
+            <!-- الموقع الجغرافي (Google Maps) -->
+            <a href="https://maps.app.goo.gl/FZGh9pQPSLyTUydz9" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon" style="background: #e63946;"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-info">
+                    <h4>موقع الورشة (خريطة جوجل)</h4>
+                    <p>انقر لعرض الموقع على الخريطة</p>
+                </div>
+            </a>
+
+            <!-- صفحة الفيسبوك -->
+            <a href="https://www.facebook.com/share/19ZVRpSfTV/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon" style="background: #1877f2;"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="contact-info">
+                    <h4>صفحة الفيسبوك</h4>
+                    <p>تابع أعمالنا وخدماتنا</p>
+                </div>
+            </a>
+
+            <!-- حساب الانستغرام -->
+            <a href="https://instagram.com/ad_doors1?xtok=MXVqOTB0bzhudnYxYw%3D%3D" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);"><i class="fa-brands fa-instagram"></i></div>
+                <div class="contact-info">
+                    <h4>حساب الانستغرام</h4>
+                    <p>@ad_doors1</p>
+                </div>
+            </a>
+</section>
+<section class="section"><h2>أعمال الورشة</h2><div class="gallery" id="gallery"></div><p class="muted" id="gallery-note" hidden>اضغط على الصورة لتكبيرها.</p></section>
+<section class="section"><h2>زيارة الورشة والتركيب</h2><div class="details"><p><a href="https://maps.app.goo.gl/FZGh9pQPSLyTUydz9" target="_blank" rel="noopener noreferrer">عرض موقع الورشة على الخريطة</a></p><p id="address-row"></p><p id="hours-row"></p><p id="areas-row"></p></div></section>
+        </div>
+
+        <!-- تذييل البطاقة -->
+        <div class="card-footer">
+            جميع الحقوق محفوظة © AD Doors 2026
+        </div>
+    </div>
+
+<nav class="mobile-contact" aria-label="تواصل سريع"><a class="call-action" href="tel:0553681362"><i class="fa-solid fa-phone" aria-hidden="true"></i> اتصال</a><button class="quote-action" id="sticky-quote"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> اطلب عرض سعر</button></nav>
+<dialog id="quote-dialog" aria-labelledby="quote-heading"><button class="utility" data-close>إغلاق</button><h2 id="quote-heading">طلب عرض سعر</h2><p class="muted">أرسل تفاصيل طلبك إلى الورشة عبر واتساب.</p><form id="quote-form" class="quote-fields"><label>نوع العمل<select name="kind"><option>باب</option><option>نافذة</option><option>أعمال أخرى</option></select></label><label>المادة<select name="material"><option>ألمنيوم</option><option>PVC</option><option>حديد</option><option>خشب</option></select></label><label>المقاسات بالسنتيمتر<input name="size" placeholder="مثال. عرض 100، ارتفاع 210" required></label><label>مكان التركيب<input name="place" placeholder="البلدية والولاية" required></label><label>تفاصيل إضافية<textarea name="notes" placeholder="الكمية، اللون، والتفاصيل المطلوبة"></textarea></label><button type="submit" class="primary">إرسال الطلب عبر واتساب</button></form></dialog>
+<dialog id="photo-dialog" aria-label="صورة العمل"><button class="utility" data-close>إغلاق</button><img id="large-photo" alt=""></dialog><div class="toast" id="toast" role="status" hidden></div>
+<dialog id="qr-dialog" aria-labelledby="qr-heading"><button class="utility" data-close>إغلاق</button><h2 id="qr-heading">شارك البطاقة برمز QR</h2><p class="muted" id="qr-help"></p><div id="qr-image" style="display:flex;justify-content:center;padding:24px;background:white;margin-top:14px;min-height:280px"></div><p id="qr-target" class="muted" dir="ltr" style="overflow-wrap:anywhere;text-align:center"></p><button class="utility" id="qr-download" style="width:100%" disabled>تنزيل الرمز PNG</button><p class="muted">وجّه كاميرا الهاتف نحو الرمز لعرض الرابط.</p></dialog>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+// ضع بيانات الورشة الحقيقية وصور الأعمال هنا. تظهر الصور تلقائياً بعد إضافتها.
+const workshop={address:'',hours:'',areas:'',photos:[]};
+// مثال للصورة: {src:'work-1.jpg',alt:'باب ألمنيوم من أعمال الورشة'}
+const $=id=>document.getElementById(id);
+let qrLink='';
+function makeQR(link){$('qr-download').disabled=true;if(typeof QRCode==='undefined'){$('qr-image').textContent='تعذر تحميل مولد الرمز. اتصل بالإنترنت وأعد تحميل الصفحة.';return}try{const parsed=new URL(link);if(!['https:','http:'].includes(parsed.protocol))throw Error();$('qr-image').replaceChildren();new QRCode($('qr-image'),{text:parsed.href,width:240,height:240,colorDark:'#292d30',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});qrLink=parsed.href;$('qr-target').textContent=qrLink;$('qr-download').disabled=false}catch{$('qr-image').textContent='تعذر إنشاء الرمز';$('qr-target').textContent=''}}
+function automaticCardLink(){const host=location.hostname.toLowerCase();const local=location.protocol==='file:'||host==='localhost'||host==='127.0.0.1'||host==='[::1]'||host.endsWith('.localhost');if(/^https?:$/.test(location.protocol)&&!local)return {url:location.href,local:false};return {url:'https://wa.me/213553681362',local:true}}
+$('qr-open').onclick=()=>{const target=automaticCardLink();$('qr-help').textContent=target.local?'تفتح البطاقة من حاسوبك. هذا الرمز يفتح واتساب الورشة. عند فتح البطاقة من الاستضافة، يشير الرمز إلى رابطها تلقائياً.':'التقطت رابط البطاقة تلقائياً. امسح الرمز لفتحها على هاتفك.';$('qr-dialog').showModal();makeQR(target.url)};
+$('qr-download').onclick=()=>{const source=$('qr-image').querySelector('canvas');if(!source){toast('أنشئ الرمز أولاً');return}const canvas=document.createElement('canvas');canvas.width=canvas.height=1024;const ctx=canvas.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,1024,1024);ctx.imageSmoothingEnabled=false;ctx.drawImage(source,96,96,832,832);const a=document.createElement('a');a.download='AD-Doors-QR.png';a.href=canvas.toDataURL('image/png');a.click()};
+let toastTimer;
+function toast(message){$('toast').textContent=message;$('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').hidden=true,3500)}
+$('quote-open').onclick=()=>$('quote-dialog').showModal();
+$('sticky-quote').onclick=()=>$('quote-dialog').showModal();
+document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>b.closest('dialog').close());
+$('quote-form').onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);const message=`السلام عليكم، أريد عرض سعر من AD Doors.\nنوع العمل: ${f.get('kind')}\nالمادة: ${f.get('material')}\nالمقاسات بالسنتيمتر: ${f.get('size')}\nمكان التركيب: ${f.get('place')}\nتفاصيل إضافية: ${f.get('notes')||'لا توجد'}`;window.open('https://wa.me/213553681362?text='+encodeURIComponent(message),'_blank','noopener,noreferrer')};
+$('save-contact').onclick=()=>{const vcard='BEGIN:VCARD\r\nVERSION:3.0\r\nFN:AD Doors\r\nORG:AD Doors\r\nTEL;TYPE=WORK,VOICE:+213553681362\r\nEND:VCARD\r\n';const url=URL.createObjectURL(new Blob([vcard],{type:'text/vcard;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='AD-Doors.vcf';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('نزّل ملف الاتصال ثم افتحه لحفظ الرقم')};
+$('share-card').onclick=async()=>{const text='AD Doors، تصميم وتصنيع وتركيب الأبواب والنوافذ. هاتف +213553681362';const online=/^https?:$/.test(location.protocol);const data=online?{title:'AD Doors',text,url:location.href}:{title:'AD Doors',text:text+' https://wa.me/213553681362'};try{if(navigator.share){await navigator.share(data)}else if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(data.url?text+' '+data.url:data.text);toast('نسخت معلومات البطاقة للمشاركة')}else{window.open('https://wa.me/?text='+encodeURIComponent(data.url?text+' '+data.url:data.text),'_blank','noopener,noreferrer')}}catch(e){if(e.name!=='AbortError')toast('تعذرت المشاركة، حاول مرة أخرى')}};
+$('address-row').textContent=workshop.address?'العنوان. '+workshop.address:'العنوان التفصيلي. تواصل معنا أو افتح الخريطة';
+$('hours-row').textContent=workshop.hours?'أوقات العمل. '+workshop.hours:'أوقات العمل. اتصل لتأكيد موعد الزيارة';
+$('areas-row').textContent=workshop.areas?'مناطق التركيب. '+workshop.areas:'مناطق التركيب. أرسل موقعك للتحقق من التغطية';
+if(workshop.photos.length){$('gallery-note').hidden=false;workshop.photos.forEach(photo=>{const button=document.createElement('button');button.className='work-tile';button.setAttribute('aria-label','تكبير '+photo.alt);const img=document.createElement('img');img.src=photo.src;img.alt=photo.alt;img.loading='lazy';button.append(img);const caption=document.createElement('span');caption.className='work-caption';caption.textContent=photo.alt;button.append(caption);button.onclick=()=>{$('large-photo').src=photo.src;$('large-photo').alt=photo.alt;$('photo-dialog').showModal()};$('gallery').append(button)})}else{const empty=document.createElement('div');empty.className='gallery-empty';empty.innerHTML='<i class="fa-regular fa-images" aria-hidden="true"></i><h3>اكتشف أعمال AD Doors</h3><p>شاهد صور أعمال الورشة على صفحاتنا، وتواصل معنا لمناقشة التصميم المناسب لك.</p><div class="gallery-links"><a href="https://www.facebook.com/share/19ZVRpSfTV/" target="_blank" rel="noopener noreferrer">فيسبوك</a><a href="https://instagram.com/ad_doors1" target="_blank" rel="noopener noreferrer">إنستغرام</a></div>';$('gallery').append(empty)}
+</script>
+<script src="photos.js"></script>
+</body>
+</html>
